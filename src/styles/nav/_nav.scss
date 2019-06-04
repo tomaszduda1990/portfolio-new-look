@@ -1,0 +1,24 @@
+@import './links';
+@import './hamburger';
+
+nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 90px;
+ display: flex;
+ //background: rgba(33, 33, 33, 0.8);
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 45px;
+ z-index: 100;
+}
+
+@media screen and (min-width: 1200px){
+  nav{
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
